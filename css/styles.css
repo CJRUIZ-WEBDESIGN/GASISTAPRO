@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+ body{
+    background-image: linear-gradient(to top, #afafaf 0%, #ffffff 50%);
+    color: #a15ce5;
+    padding: 1%;
+    font-family: 'Poppins', sans-serif;
+    margin: 2.5%;
+
+}
+h1 {
+    color: black;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #ff9102;
+}
+
+p, li, a {
+    color: #000000; 
+}
+
+.site-nav__link {
+    color: #a15ce5;
+}
+.site-nav__item {
+    color: black;
+}
+aside, main, footer, nav, header, section, .clase {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+}
+
+
+
+/* Estilos para el tema oscuro */
+body.dark-mode {
+    background-image: linear-gradient(to top, rgb(21, 36, 79) 0%, #15244f 100%);
+    color: yellow; 
+    font-family: 'Poppins', sans-serif;
+    margin: 2.5%;
+}
+
+body.dark-mode h1 {
+    color: white;
+}
+
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+    color: rgba(255, 255, 0, 0.79);
+}
+
+body.dark-mode p, 
+body.dark-mode li, 
+body.dark-mode a {
+    color: rgb(208, 234, 208);
+}
+
+body.dark-mode aside, 
+body.dark-mode main, 
+body.dark-mode footer, 
+body.dark-mode nav, 
+body.dark-mode header, 
+body.dark-mode , 
+body.dark-mode section {
+    background-color: rgba(2, 9, 30, 0.823);
+}
+ 
+
+.fa-solid, .fas  {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: rgb(17, 0, 252);
+}
+.fas {
+    background-color: transparent;
+}
+
+.fas:hover {
+    color: rgb(255, 255, 255);
+}
+.site-header {
+    background-image: url("../images/fondoheadergas2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.imglogo {
+    width: 230px;
+    z-index: 9999;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.2);
+    margin-bottom: 10px;
+    margin: 10px;
+    color: indigo;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.site-nav__link {
+    color: rgba(2, 0, 104, 0.581);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.site-nav__link:hover {
+    background-color: #00000015;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    gap: 5px;
+    /* Espacio antes del section full-width */
+    margin: 7px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* welcome */
+.content-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.1);
+    margin: 0px 10px 0px 10px;
+    padding: 30px;
+}
+
+.content-welcome__h1 {
+    text-align: center;
+    color: #e2eb7c;
+    text-shadow: 1px 1px 8px black;
+}
+
+.content-welcome__h2{
+    text-align: center;
+    padding: 5px;
+    color: #e2eb7c;
+    text-decoration: underline;
+    text-shadow: 1px 1px 8px black;
+
+}
+
+.content-welcome__p{
+    text-align: center;
+    padding: 5px;
+    color: white; 
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.site-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(51, 51, 51, 0.1);
+    margin: 0px 10px 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);   
+}
+
+.site-aside {
+    display: inline-block;
+    justify-content: center;
+    flex-basis: 20%;
+    background-color: #555;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);   
+}
+
+.site-aside__promo-image,
+.site-aside__image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(51, 51, 51, 0.1);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.site-section {
+    background-color: rgba(51, 51, 51, 0.1);
+    margin: 10px;
+    padding: 10px;   
+}
+
+.full-width {
+    width: auto;
+    background-color: transparent;
+}
+
+.third-width {
+    width: auto;
+    /* Restando el gap */
+    float: left;
+    margin-right: 20px;
+    background-color: rgba(51, 51, 51, 0.1);
+
+}
+/* footer */
+/* Estilos base */
+.site-footer {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffffc7;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(51, 51, 51, 0.1);
+    margin: 20px 10px 20px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);   
+    background-image: url("../images/fondoheadergas2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+.site-footer .container-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.footer-logo img {
+    width: 160px;
+}
+
+.footer-section address div {
+    margin-bottom: 10px;
+}
+
+.social-section a {
+    margin-right: 10px;
+}
+
+.social-section img {
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
+}
+
+.social-section img:hover {
+    opacity: 0.7;
+}
+
+/* Estilos para el tema oscuro */
+body.dark-mode .site-footer {
+    background-color: rgba(2, 9, 30, 0.823);
+    color: yellow; 
+}
+
+body.dark-mode .footer-section h2, 
+body.dark-mode .footer-section h3 {
+    color: rgba(255, 255, 0, 0.79);
+}
+
+body.dark-mode .footer-section address div {
+    color: rgb(208, 234, 208);
+}
+
+.fa-facebook {
+    font-size: 1.6rem;
+}
+
+.fa-instagram {
+    font-size: 1.6rem;
+}
+
+.fa-whatsapp {
+    font-size: 1.6rem;
+}
+
+.site-nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav__item {
+    margin-right: 15px;
+}
+
+.site-nav__item:last-child {
+    margin-right: 0;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.shadow-host-companion {
+    background: white!important;
+}
+
+/* MAPA */
+ 
+.gmap_canvas {
+    width: 100%;
+}
+/*CARDS  */
+.card {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card__title {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.card__description {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+}
+
+
+.section-padre {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.1);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* SERVICIOS */
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 columnas para 5 servicios */
+    gap: 20px;
+    /* Espacio entre los servicios */
+    justify-items: center;
+    /* Centrar los elementos en cada celda del grid */
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.servicio img {
+    width: 100px;
+    /* O el tamaño que desees */
+    height: 100px;
+    border-radius: 50%;
+    /* Para que la imagen tenga forma de círculo */
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+
+.site-section__h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.site-section__h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.site-section__p {
+    padding: 0 30px 0 30px;
+}
+
+/* carrousel */
+
+.carousel {
+    display: flex;
+    position: relative;
+    max-width: auto;
+    margin: 2.5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.carousel-slide {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: #f4f4f4;
+}
+
+.carousel-slide.active {
+    display: flex;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-content {
+    position: absolute;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(79, 78, 78, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.carousel-prev {
+    left: 20px;
+    font-size: 2rem;
+    list-style-type: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.carousel-next {
+    right: 20px;
+    font-size: 2rem;
+    list-style-type: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+.carousel-prev:hover {
+color: yellow;
+}
+
+.carousel-next:hover {
+color: yellow;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: calc(33.333% - 16px);
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 8px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .card-text {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  
+  .price {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .warranty {
+    font-size: 0.8em;
+    color: #666;
+  }
+  

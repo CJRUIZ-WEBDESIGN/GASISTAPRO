@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GasistaPro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <script src="https://kit.fontawesome.com/088b4b5c76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <img class="imglogo site-header__logo" id="logo" src="./images/gasislogorbg.png" alt="Logo GasistaPro"">
+    </header>
+        
+        <nav class=" site-nav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Inicio</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Trabajos</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Servicios</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Tarifas</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Contacto</a></li>
+            </ul>
+            <i class="fas fa-moon" id="toggleTheme"></i> <!-- Asumiendo que comienza en modo claro. -->
+            
+        </nav>
+
+            <div class="carousel">
+
+                <div class="carousel-slide active">
+                    <img src="./images/shutterstock_319733048.jpg" alt="Slide 1">
+                    <div class="carousel-content">
+                        <h1 class="content-welcome__h1">¡Bienvenidos a GasistaPro!</h1>
+                        <p class="content-welcome__p">En GasistaPro, creemos en la importancia de un espacio seguro y confortable,
+                            ya sea en su hogar, su negocio o en la industria..</p>
+      
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./images/shutterstock_1309049170.jpg" alt="Slide 2">
+                    <div class="carousel-content">
+                        <h2 class="content-welcome__h2">Sobre Nosotros</h2>
+                        <p class="content-welcome__p"> Con una trayectoria que se distingue por la experiencia, la dedicación y la
+                            confianza, hemos liderado el sector brindando soluciones seguras y eficientes para cada necesidad.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="./images/close-foreman.jpeg" alt="Slide 3">
+                    <div class="carousel-content">
+                        <h2 class="content-welcome__h2">Descubre Más</h2>
+                        <p class="content-welcome__p">Descubra con nosotros cómo podemos hacer que su entorno sea no solo más cómodo, sino también más seguro.  </p>
+                    </div>
+                </div>
+                <!-- ... [otros slides] ... -->
+                <a href="javascript:void(0)" class="carousel-prev">&#10094;</a>
+                <a href="javascript:void(0)" class="carousel-next">&#10095;</a>
+            </div>
+
+            <main class="wrapper">
+                <aside class="site-aside site-aside--left">
+                    <!-- Precios, promociones -->
+                    <div class="site-aside__promo">
+                        <h2>Promoción del Mes</h2>
+                        <p>Con la primera contratacion del servicio, tendra hasta un 25% de descuento en el siguiente servicio.</p>
+                        <img src="https://picsum.photos/100" alt="Promoción" class="site-aside__promo-image">
+                    </div>
+                       <div class="site-aside__promo">
+                        <h2>Medios de Pago</h2>
+                        <p>Aceptamos los principales medios de pago</p>
+                        <img src="./images/mpg.png" alt="Medios de pago con Mercado Pago" class="site-aside__promo-image">
+                        <img src="./images/pesos.jpeg" alt="Medios de pago con Efectivo / Transferencia" class="site-aside__promo-image">
+                        <img src="./images/tarjetascredito1.jpeg" alt="Medios de pago con Tarjetas de Credito" class="site-aside__promo-image">
+                    </div>
+                </aside>
+                
+                <div class="site-content">
+                   
+                    <section class="site-section full-width">
+                        <h1 class="site-section__h1">Nuestros Servicios</h1>
+                        <p class="site-section__p">En GasistaPro, ofrecemos una variedad de servicios relacionados con la
+                            instalación,
+                            reparación y
+                            mantenimiento de sistemas de gas. </p>
+                        <div class="servicios-container">
+                            <div class="servicio">
+                                <img src="./images/instalaciongasss.png" alt="Instalación de tuberías de gas">
+                                <p>Instalación de tuberías y caños de gas</p>
+                            </div>
+                            <div class="servicio">
+                                <img src="./images/fugagas.png" alt="Reparación de fugas">
+                                <p>Reparación de fugas y roturas de caños</p>
+                            </div>
+                            <div class="servicio">
+                                <img src="./images/estufatiro.png" alt="Instalacion de estufas tirobalanceado">
+                                <p>Instalacion de estufas tirobalanceado</p>
+                            </div>
+                            <div class="servicio">
+                                <img src="./images/calefon.jpg" alt="Instalación de termotanques y calefones">
+                                <p>Instalación de termotanques y calefones</p>
+                            </div>
+                            <div class="servicio">
+                                <img src="./images/cocina.jpg" alt="Servicios de Instalacion de Cocinas">
+                                <p>Servicios de Instalacion de Cocinas</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="site-aside site-aside--right">
+                <!-- Datos relevantes, descuentos, tips -->
+                <div>
+                    <img src="./images/urgencias.png" alt="Imagen de Trabajo" class="site-aside__image">
+                    <h2>Servicio las 24HS</h2>
+                    <p>Ofrecemos los mejores servicios de gas con atencion las 24hs.</p>
+                </div>
+            </aside>
+
+ 
+        </main>
+    
+
+        <div id="card-container" class="card-container"></div>
+
+
+        <section class="site-section-map full-width">
+            <h1 class="site-section__h1">Ubicanos en el Mapa!</h1>
+            <p class="site-section__p">Nos encontramos en Almirante Brown, Provincia de Buenos Aires.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13107.053242929962!2d-58.38071122591562!3d-34.78673339336564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd346291b7ef7%3A0x44b74d34162ac098!2sJos%C3%A9%20Marmol%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694641617665!5m2!1ses-419!2sar" width="1500" height="450" style="border:0; padding: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </section>
+      
+            <footer class="site-footer">
+                <div class="container-footer">
+                    <div class="footer-logo">
+                        <img src="./images/logooscuro.png" alt="Logo de la compañía">
+                    </div>
+                    <div class="footer-section">
+                        <h3>Horarios de Atención y Contacto</h3>
+                        <address>
+                            <div>Lunes a Viernes: 8:00 AM - 6:00 PM</div>
+                            <div>Sábados: 9:00 AM - 1:00 PM</div>
+                            <div>Teléfono: +54 9 1234-5678</div>
+                        </address>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Direccion: </h3>
+
+                        <address>
+                            <div>Dirección: Calle Ficticia 123, Buenos Aires</div>
+                            <div>Correo electrónico: info@gasistapro.com.ar</div>
+                            <div>Provincia: Buenos Aires</div>
+
+                        </address>
+                    </div>
+                    <div class="footer-section social-section">
+                        <h3>Síguenos en Redes Sociales</h3>
+                        <a href="www.facebook.com"><i class="fa-brands fa-facebook" style="color: #ffea00;"></i></a>
+                        <a href="www.instagram.com"><i class="fa-brands fa-instagram" style="color: #ffea00;"></i></a>
+                        <a href="www.facebook.com"><i class="fa-brands fa-whatsapp" style="color: #ffea00;"></i></a>
+                    </div>
+                </div>
+            </footer>
+            
+       
+
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
